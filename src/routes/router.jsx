@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       },
       {
         path:'rider',
-        Component:<PrivateRoute><Rider></Rider></PrivateRoute>
+        element:<PrivateRoute><Rider></Rider></PrivateRoute>
       },
       {
         path:'coverage',
