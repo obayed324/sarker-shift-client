@@ -56,20 +56,20 @@ const Rider = () => {
                         <h4 className="text-2xl font-semibold">Rider Details</h4>
                         {/* rider name */}
                         <label className="label">Rider Name</label>
-                        <input type="text" {...register('name')}
+                        <input type="text" {...register('name',{required:"Sender name is required" })}
                             defaultValue={user?.displayName}
                             className="input w-full" placeholder="Sender Name" />
 
                         {/* rider email */}
                         <label className="label">Email</label>
-                        <input type="text" {...register('email')}
+                        <input type="text" {...register('email',{required:"Email is required" })}
                             defaultValue={user?.email}
                             className="input w-full" placeholder="Sender Email" />
 
                         {/* rider region */}
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Regions</legend>
-                            <select {...register('region')} defaultValue="Pick a region" className="select">
+                            <select {...register('region',{required:"Region is required" })} defaultValue="Pick a region" className="select">
                                 <option disabled={true}>Pick a region</option>
                                 {
                                     regions.map((r, i) => <option key={i} value={r}>{r}</option>)
@@ -80,7 +80,7 @@ const Rider = () => {
                         {/* rider districts */}
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Districts</legend>
-                            <select {...register('district')} defaultValue="Pick a district" className="select">
+                            <select {...register('district',{required:"District is required" })} defaultValue="Pick a district" className="select">
                                 <option disabled={true}>Pick a district</option>
                                 {
                                     districtsByRegion(riderRegion).map((r, i) => <option key={i} value={r}>{r}</option>)
@@ -91,7 +91,7 @@ const Rider = () => {
 
                         {/* rider address */}
                         <label className="label mt-4">Your Address</label>
-                        <input type="text" {...register('address')} className="input w-full" placeholder="Sender Address" />
+                        <input type="text" {...register('address',{required:"Address is required" })} className="input w-full" placeholder="Sender Address" />
 
 
                     </fieldset>
@@ -100,16 +100,16 @@ const Rider = () => {
                         <h4 className="text-2xl font-semibold">More Details</h4>
                         {/* receiver name */}
                         <label className="label">Driving License</label>
-                        <input type="text" {...register('license')} className="input w-full" placeholder="Driving License" />
+                        <input type="text" {...register('license',{required:"License is required" })} className="input w-full" placeholder="Driving License" />
 
                         {/* receiver email */}
                         <label className="label">NID</label>
-                        <input type="text" {...register('nid')} className="input w-full" placeholder="NID" />
+                        <input type="text" {...register('nid',{required:"NID NO is required" })} className="input w-full" placeholder="NID" />
 
 
                         {/* Bike */}
                         <label className="label mt-4">BIKE</label>
-                        <input type="text" {...register('bike')} className="input w-full" placeholder="Bike" />
+                        <input type="text" {...register('bike',{required:"NID NO is required" })} className="input w-full" placeholder="Bike" />
                         {/*  address */}
 
 
