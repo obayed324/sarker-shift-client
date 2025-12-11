@@ -3,7 +3,7 @@ import React from 'react';
 
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:3000'
+    baseURL: 'https://sarker-shift-server.vercel.app'
 })
 
 const useAxios = () => {

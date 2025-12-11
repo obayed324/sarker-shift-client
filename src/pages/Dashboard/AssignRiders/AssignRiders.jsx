@@ -78,7 +78,7 @@ const AssignRiders = () => {
                             <th>{index + 1}</th>
                             <td>{parcel.parcelName}</td>
                             <td>{parcel.cost}</td>
-                            <td>{parcel.createdAt}</td>
+                            <td>{parcel.createAt}</td>
                             <td>{parcel.senderDistrict}</td>
                             <td>
                                 <button

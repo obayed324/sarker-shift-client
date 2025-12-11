@@ -35,7 +35,7 @@ const CompletedDeliveries = () => {
                         <tr>
                             <th></th>
                             <th>Name</th>
-                            <th>Created At</th>
+                            <th>Created At</th> 
                             <th>Pickup District</th>
                             <th>Cost</th>
                             <th>Payout</th>
