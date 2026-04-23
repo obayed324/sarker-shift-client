@@ -14,3 +14,4 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
+// bg-[#f0f0ee]

@@ -22,7 +22,7 @@ const services = [
 
 const HowItWorks = () => {
     return (
-        <section className="bg-[#f0f0ee] px-6 py-10 rounded-xl mb-5">
+        <section className="px-6 py-10 rounded-xl mb-5">
             <h2 className="text-2xl font-bold text-[#0d3d40] mb-8">How it Works</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                 {services.map((service, index) => (
